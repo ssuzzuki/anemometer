@@ -154,8 +154,11 @@ class anemometer(object):
                 setting['ft/min'] +
                 setting['kmh'] +
                 setting['m/s']
-            )if setting['flw_vel'] == "VEL" else setting['cmm_cfm'] )
-        v2_unit = 'deg-' + setting['deg']
+            ) if setting['flw_vel'] == "VEL" else setting['cmm_cfm'] )
+        v2_unit = (
+            ('deg-' + setting['deg'] ) if setting['flw_vel'] == "VEL" else 
+            ('M^2' if setting['cmm_cfm'] == 'CMM' else  'FT^2')
+        )
         out = []
         for k,v in setting.items():
             out.append(("%%%ds"%min_width)%v)
