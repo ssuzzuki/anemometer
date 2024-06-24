@@ -1,5 +1,5 @@
 # Digital Hot Wire Anemometer
-Python tool for reading measurements from anemometers sold under the Bonvision brand
+Python tool for reading measurements from anemometers sold under the Bonvoisin brand
 
 Tools : 
 - anemometer.py : driver

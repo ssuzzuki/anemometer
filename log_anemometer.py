@@ -8,7 +8,7 @@ def arg_parser():
     """ parse aruguments """
     global ARGS
 
-    parser = argparse.ArgumentParser(description='Retrieve realtime data from Bonvision digital hotwire anemometer')
+    parser = argparse.ArgumentParser(description='Retrieve realtime data from Bonvoisin digital hotwire anemometer')
     parser.add_argument(
         'outfile', nargs='?',
         help='filname to save to (optional)')
